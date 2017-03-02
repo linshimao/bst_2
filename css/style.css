@@ -1,0 +1,411 @@
+html{
+	font-size: 62.5%;
+}
+body{
+	font-size: 1.6rem;
+	color: #444444;
+}
+/*导航条*/
+.logo{
+	position: relative;
+}
+.logo a strong{
+	color: #12B5DA;
+	transition: color .15s linear;
+}
+.logo a strong:hover{
+	color: #e06d5e;
+}
+.logo a:after{
+	position: absolute;
+    content: '';
+    top: 6px;
+    left: -9px;
+    background: #da12af;
+    width: 10px;
+    height: 10px;
+}
+#navbar-collapse > ul > li > a{
+	transition: all .15s ease-in-out; 
+}
+#navbar-collapse > ul > li > a:hover{
+	color: #e06d5e;
+	padding: 12px 15px;
+	font-weight: bold;
+}
+/*导航条*/
+/*header-wrap*/
+#head-wrapper{
+	min-height: 600px;
+	margin-top: -60px;
+	padding-top: 160px;
+	width: 100%;
+	text-align: center;
+	background: url(../img/bg/bg-1.jpg) no-repeat center center fixed;
+	padding-bottom: 2rem;
+}
+#head-wrapper .dis-li ul li{
+	font-size: 2.2rem;
+    line-height: 8.2rem;
+	color: #fff;
+}
+#head-wrapper .dis-li{
+	overflow: hidden;
+	margin-top: 10px;
+    height: 7.7rem;
+}
+#head-wrapper i[class*="fa-hand-o"]{
+	color: #fff;
+	margin-top: 40px;
+}
+#head-wrapper i:hover{
+	cursor: pointer;
+}
+
+/*header-wrap*/
+/*main-body*/
+#main-body{
+	padding: 4rem 0;
+	background-color: #1bac91;
+}
+#main-body blockquote{
+	border: none;
+	position: relative;
+}
+#main-body cite{
+	padding: 0 20px;
+}
+#main-body blockquote.large{
+	font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1em;
+    color: #fff;
+    text-align: right;
+}
+#main-body blockquote:before{
+	content: "\f10d";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #fff;
+    font-size: 4rem;
+    padding-right: 0.5em;
+}
+.animates{
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+.fadeInLeftBig{
+	animation-name: fadeInLeftBig;
+}
+.fadeInRightBig{
+	animation-name: fadeInRightBig;
+}
+#main-body .coffee{
+	padding-top: 3rem;
+}
+#main-body .coffee i{
+	font-size: 15rem;
+	color: #fff;
+}
+/*main-body*/
+/*about*/
+#about{
+	background-color: #f2f2f2;
+	padding: 5rem 0 5rem 0;
+}
+#about h2{
+	font-size: 3rem;
+	font-weight: 700;
+	margin-bottom: .8em;
+}
+#about h3{
+	font-size: 1.6rem;
+}
+#about p{
+	line-height: 1.6em;
+    font-size: 1.4rem;
+}
+#about .about-left{
+	padding: 0 4em 0 4em;
+}
+#about .people{
+	text-align: center;
+}
+#about .fadeInBottomBig{
+	animation-name: fadeInBottomBig;
+}
+/*about*/
+
+/*services*/
+#services{
+	background-color: #f36f36;
+	text-align: center;
+	padding: 5rem 0;
+}
+#services h2{
+	color: #FFFFFF;
+	font-size: 6rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+#services .ser-box{
+	color: #FFFFFF;
+	transition: all .3s ease-in-out; 
+}
+#services .ser-box img{
+	margin: 0 auto;
+}
+#services .ser-box p{
+	padding: 0 2rem;
+}
+#services .ser-box:hover{
+	background-color: #f36518;
+}
+#services .fadeInSerImg{
+	animation-name: fadeInSerImg;
+}
+#services .fadeInSerBox{
+	animation-name: fadeInSerBox;
+}
+#services .fadeInSerBox_h3{
+	animation-duration: .2s;
+	animation-name: fadeInSerBox_h3;
+}
+/*services*/
+/*我们的工作*/
+#our-work{
+	text-align: center;
+	padding: 5rem 0;
+}
+#our-work .small-icons{
+	float: left;
+}
+#our-work .container > div:nth-child(2){
+	height: 352px;
+	padding: 0 1rem;
+}
+#our-work .small-icons {
+	width: 50%;
+	position: relative;
+}
+#our-work .small-icons .hover-show{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #e06d5e;
+	color: #FFFFFF;
+	transition: all .2s ease-in;
+	opacity: 0;
+}
+#our-work .small-icons .hover-show:hover{
+	opacity: 1;
+}
+#our-work .small-icons .hover-show p{
+	position: absolute;
+	top: 20%;
+	text-align: center;
+	width: 100%;
+}
+#our-work .small-icons .hover-show i{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	display: block;
+}
+
+#our-work h3{
+	font-size: 4.6rem;
+	font-weight: 700;
+}
+#our-work .works{
+	
+	margin: .5rem 0 3rem 0;
+}
+#our-work .works ul li a:hover{
+	text-decoration: none;
+}
+#our-work .works ul li{
+	border: 2px solid #f2f2f2;
+	padding: 0 .6rem;
+	margin-top: .8rem;
+}
+#our-work .works ul li h5{
+	color: #9D9D9D;
+}
+#our-work .works ul li:hover h5{
+	color: #FFFFFF;
+}
+#our-work .works ul li.active,#our-work .works ul li:hover{
+	background: #e06d5e;
+    border-color: #e06d5e;
+    /*color: #FFFFFF;*/
+}
+#our-work .works ul li.active h5{
+	color: #FFFFFF;
+}
+/*我们的工作*/
+/*logo-rocket*/
+#logo-rocket{
+	position: relative;
+	padding: 10rem;
+	background: url(../img/bg/bg-3.jpg);
+	font-size: 4rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+#logo-rocket p:before{
+	content: "\f10d";
+	font-family: FontAwesome;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: inherit;
+    color: #D5D5D5;
+    font-size: 6rem;
+    position: absolute;
+    top: -4rem;
+    left: 1rem;
+}
+/*logo-rocket*/
+/*所有的动画效果*/
+@keyframes fadeInLeftBig{
+	0%{
+		opacity: 0;
+		transform: translateX(-2000px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0);
+		}
+}
+@keyframes fadeInRightBig{
+	0%{
+		opacity: 0;
+		transform: translateX(2000px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes fadeInBottomBig{
+	0%{
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes fadeInSerImg{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+@keyframes fadeInSerBox{
+	0%{
+		opacity: 0;
+		transform: translateY(200px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes fadeInSerBox_h3{
+	0%{
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+/*所有的动画效果*/
+
+/*媒体查询*/
+@media (min-width: 768px) {
+	#main-body .coffee{
+		padding-top: 0;
+	}
+	#main-body blockquote.large{
+	font-size: 2.6rem;
+	}
+	#main-body blockquote:before{
+    font-size: 5rem;
+	}
+	#about h3{
+	font-size: 2.6rem;
+	}
+	#about p{
+	line-height: 1.6em;
+    font-size: 1.6rem;
+	}
+	#about h2{
+	font-size: 3.8rem;
+ 	}
+ 	#main-body{
+	padding: 11rem 0;
+	}
+	#head-wrapper .dis-li ul li{
+	font-size: 7.2rem;
+    }
+    #head-wrapper .dis-li ul li{
+	font-size: 6rem;
+	}
+	#our-work .small-icons {
+	width: 20%;
+	}
+	#our-work .small-icons .hover-show{
+	font-size: 2.5rem;
+	}
+}
+@media (min-width:992px){
+	#main-body .coffee{
+		padding-top: 0;
+	}
+	#main-body blockquote.large{
+	font-size: 3.6rem;
+	}
+	#main-body blockquote:before{
+    font-size: 7rem;
+	}
+	#about h3{
+	font-size: 3rem;
+	}
+	#about h2{
+	font-size: 4.6rem;
+	}
+	#head-wrapper{
+	padding-bottom: 10rem;
+	}
+	#head-wrapper .dis-li ul li{
+	font-size: 6rem;
+	}
+	#our-work h3{
+	font-size: 4.6rem;
+	}
+}
+@media (min-width:1200px){
+	#main-body .coffee{
+		padding-top: 0;
+	}
+	#head-wrapper .dis-li ul li{
+	font-size: 9rem;
+	}
+}
+/*媒体查询*/
