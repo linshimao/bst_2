@@ -19,4 +19,12 @@ $(document).ready(function() {
 		'<i class="fa fa-plus fa-2x" aria-hidden="true"></i>' +
 		'</div>'
 	);
+	//footer四个小图标hover背景色['#ba7b3d','#5ad2eb','#f57b71','#d84848']
+	$("footer .fa-bgdark").hover(function(){
+		var Color = ['#ba7b3d','#5ad2eb','#f57b71','#d84848'];
+		var _this = this;
+//			$(_this).css("backgroundColor",Color[i]);
+			
+	});
+	
 });

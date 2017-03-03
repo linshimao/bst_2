@@ -5,6 +5,9 @@ body{
 	font-size: 1.6rem;
 	color: #444444;
 }
+p{
+	line-height: 1.6;
+}
 /*导航条*/
 .logo{
 	position: relative;
@@ -176,7 +179,7 @@ body{
 }
 /*services*/
 /*我们的工作*/
-#our-work{
+#our-work,#our-blog{
 	text-align: center;
 	padding: 5rem 0;
 }
@@ -219,12 +222,12 @@ body{
 	display: block;
 }
 
-#our-work h3{
+#our-work h3,#our-blog h3{
 	font-size: 4.6rem;
 	font-weight: 700;
+	padding-bottom: 4rem;
 }
 #our-work .works{
-	
 	margin: .5rem 0 3rem 0;
 }
 #our-work .works ul li a:hover{
@@ -253,9 +256,9 @@ body{
 /*logo-rocket*/
 #logo-rocket{
 	position: relative;
-	padding: 10rem;
+	padding: 10rem  0 6rem 0;
 	background: url(../img/bg/bg-3.jpg);
-	font-size: 4rem;
+	font-size: 2rem;
     color: #fff;
     font-weight: 700;
     text-align: center;
@@ -267,12 +270,137 @@ body{
     font-weight: 700;
     text-decoration: inherit;
     color: #D5D5D5;
-    font-size: 6rem;
+    font-size: 2.5rem;
     position: absolute;
     top: -4rem;
     left: 1rem;
 }
+#logo-rocket .fadeInRightBig i{
+	font-size: 6rem;
+	padding-top: 1rem;
+}
 /*logo-rocket*/
+/*our-blog*/
+#our-blog{
+	background: #f2f2f2;
+}
+#our-blog .post-meta{
+	background: #e06d5e;
+	padding: 1.3rem 0;
+	color: #fff;
+	font-size: 13px;
+    font-weight: 700;
+}
+#our-blog .post-meta i{
+	padding-right: 2rem;
+}
+#our-blog .post-meta span{
+	padding-right: .5rem;
+}
+#our-blog .post-meta span a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#our-blog .post-meta span a:hover{
+	text-decoration: underline;
+}
+#our-blog .post-news{
+	text-align: center;
+	padding: 0 2rem 1rem 1rem;
+	background: #FFFFFF;
+}
+#our-blog .post-news h4{
+	margin: 0;
+	padding: 2rem 0;
+	text-align: left;
+	font-weight: 700;
+}
+#our-blog .post-news p{
+	text-align: left;
+	line-height: 2rem;
+}
+#our-blog .post-news a{
+	text-decoration: none;
+	font-size: 1.4rem;
+	display: block;
+	padding-right: 1rem;
+	color: #CCCCCC;
+}
+#our-blog .blog-box{
+	transition: all .3s ease-in;
+}
+#our-blog .blog-box:hover{
+	box-shadow: 0 0 1.5rem 0.1rem #716666;
+}
+#our-blog .blog-more a.btn-danger{
+	background: #e06d5e;
+	border: none;
+	margin-top: 4rem;
+	font-size: 1.8rem;
+	border-radius: 0;
+	padding: .8rem 1.5rem;
+}
+#our-blog .blog-more a.btn-danger:hover{
+	background: #333333;
+}
+/*our-blog*/
+/*get touch*/
+#get-touch{
+	background: #1bac91;
+	padding: 5rem 0 5rem 0;
+}
+#get-touch h3{
+	text-align: center;
+	font-size: 5rem;
+	color: #FFFFFF;
+}
+#get-touch .touch-text{
+	color: #FFFFFF;
+}
+#get-touch .touch-form input{
+	height: 5rem;
+	line-height: 3rem;
+	margin-bottom: 3rem;
+	font-size: 1.8rem;
+	border: none;
+}
+#get-touch textarea{
+	outline: none;
+	border: none;
+	margin-bottom: 2rem;
+	font-size: 1.8rem;
+}
+#get-touch .touch-textarea{
+	padding-left: 0;
+}
+#get-touch .touch-form input:focus,#get-touch textarea:focus{
+	background: #555555;
+	outline: none;
+	border: none;
+	color: #F9F9F9;
+}
+#get-touch form{
+	margin-top: 2rem;
+}
+/*get touch*/
+/*footer*/
+#footer{
+	background: #2b2b2b;
+	color: #5e5e5e;
+	padding: 5rem 0;
+}
+#footer .fa-bgdark{
+	font-size: 2.5rem;
+	height: 4.8rem;
+    width: 4.8rem;
+    line-height: 4.8rem;
+    background: #333333;
+    border-radius: 100rem;
+}
+#footer .col-md-12:nth-last-child(1){
+	margin-top: 3rem;
+}
+/*footer*/
 /*所有的动画效果*/
 @keyframes fadeInLeftBig{
 	0%{
@@ -373,6 +501,22 @@ body{
 	#our-work .small-icons .hover-show{
 	font-size: 2.5rem;
 	}
+	#logo-rocket p{
+		font-size: 3rem;
+	}
+	#logo-rocket p:before{
+    font-size: 4rem;
+    left: 0;
+	}
+	#logo-rocket .fadeInRightBig i{
+		font-size: 10rem;
+	}
+	#our-blog .blog-more a.btn-danger{
+	background: #e06d5e;
+	border: none;
+	margin-top: 6rem;
+	font-size: 2.8rem;
+	}
 }
 @media (min-width:992px){
 	#main-body .coffee{
@@ -399,6 +543,9 @@ body{
 	#our-work h3{
 	font-size: 4.6rem;
 	}
+	#get-touch .touch-textarea{
+	padding-left: 3rem;
+	}
 }
 @media (min-width:1200px){
 	#main-body .coffee{
@@ -406,6 +553,9 @@ body{
 	}
 	#head-wrapper .dis-li ul li{
 	font-size: 9rem;
+	}
+	#logo-rocket p{
+	font-size: 5rem;
 	}
 }
 /*媒体查询*/
